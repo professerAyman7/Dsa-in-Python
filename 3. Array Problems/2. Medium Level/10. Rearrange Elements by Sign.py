@@ -1,4 +1,5 @@
 def rearrange(nums):
+    # Time Complexity of this also?
     result = [0] * len(nums)
     positive, negative = 0, 1
     for num in nums:
