@@ -9,7 +9,7 @@ def mergeArray(array1, array2):
         if array1[left] > array2[right]:
             array1[left], array2[right] = array2[right], array1[left]
         else:
-            # Do we have to right break??
+            # Do we have to break??
             break
         left  -= 1
         right += 1
