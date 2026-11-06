@@ -25,5 +25,5 @@ print(search(nums, target))
 
 '''
 Time  Complexity - O(log 2 (N))
-Space Compelxity - O(!1)
+Space Compelxity - O(1)
 '''
