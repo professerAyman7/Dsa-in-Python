@@ -22,6 +22,9 @@ class Solution:
         low  = 0
         high = n - 1
 
+        # Why change this to n? - Edge case
+        last = n
+
         while low <= high:
             mid = (low + high) // 2
             if nums[mid] > target:
@@ -35,7 +38,7 @@ class Solution:
     def answerFunction(self, nums, target):
         first = self.lowerBound(nums, target)
 
-        # I think first will never be -1
+        # I think first will never be -1? It can be one if the if condition is always false
         if first == -1 or nums[first] != target:
             return [-1, -1]
             
@@ -45,7 +48,7 @@ class Solution:
     
 s = Solution()
 nums   = [1,2,3,3,3,3,3,5,6,8,9,9,10]
-target = 7
+target = 1
 
 print(s.answerFunction(nums, target))
 
@@ -56,4 +59,6 @@ n is the number of elements in the list
 Time  Complexity - O(2(log 2 (N))) - O(log 2 (N))
 Space Complexity - O(1)
 '''
+
+
 
