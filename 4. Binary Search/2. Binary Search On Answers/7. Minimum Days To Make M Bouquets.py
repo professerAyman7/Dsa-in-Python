@@ -51,7 +51,7 @@ print(s.answer(m, k, bloomdays))
 
 
 '''
-Time  Complexity - O(n * (log 2 (max - min)))
+Time  Complexity - O(n * (log 2 (high - low)))
 Space Complexity - O(1)
 '''
 
