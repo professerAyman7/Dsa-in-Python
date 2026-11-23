@@ -30,7 +30,7 @@ class Solution:
 
         returnAnswer = -1
 
-        # Time Complexity - O(log 2 (max - min))
+        # Time Complexity - O(log 2 (high - low))
         while low <= high:
             mid = (low + high) // 2
 
